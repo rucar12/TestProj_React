@@ -1,0 +1,50 @@
+
+.container{
+  width: 350px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.container:hover{
+  background-color: aliceblue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.dialog{
+ display: flex;
+
+  &__avatar{
+    margin-right: 10px;
+    img{
+      border-radius: 50px;
+    }
+  }
+  &__content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3px;
+  }
+  &__text{
+    color: grey;
+    line-height: 20px;
+    flex: 1;
+    width: 240px;
+    height: 1em ;
+    padding-bottom: 3px;
+  }
+  &__date{
+    color: darkgray;
+    font-size: 10px;
+    margin-top: 5px;
+    width: 70px;
+  }
+  &__user{
+    color: black;
+    font-size: 15px;
+    margin-bottom: 2px;
+
+  }
+}

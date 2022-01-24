@@ -1,0 +1,147 @@
+
+.chat{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 781px;
+
+  &__dialogs{
+    width: 370px;
+    border-right: 2px #E5EBE5 solid;
+    &__header{
+      display: flex;
+      justify-content: space-between;
+      padding: 5px  10px;
+      font-size: 20px;
+      box-shadow: #E5EBE5 0px 2px ;
+      margin-bottom:15px ;
+      height: 5%;
+      &__item{
+        &-menu{
+          &:hover{
+            cursor: pointer;
+            color: dodgerblue;
+            transition: 0.2s;
+          }
+        }
+        &-edit{
+          &:hover{
+            cursor: pointer;
+            color: dodgerblue;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+    &__list{
+      overflow: auto;
+      height:  87.5%;
+    }
+  }
+
+  &__messages{
+    padding-left: 2%;
+    width: 1100px;
+    max-width: 75%;
+    background: linear-gradient(180deg ,#ffffff , #d7e9f7);
+    &__header{
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0px;
+      font-size: 20px;
+      box-shadow: #E5EBE5 0px 2px ;
+      margin-bottom:15px ;
+      margin-right: 1.5%;
+      height: 5%;
+      &__item{
+        &-back{
+          &:hover{
+            cursor: pointer;
+            color: dodgerblue;
+            transition: 0.2s;
+          }
+        }
+        &-more{
+          &:hover{
+            cursor: pointer;
+            color: dodgerblue;
+            transition: 0.2s;
+          }
+
+        }
+      }
+      &__menu-item{
+        color: black;
+        margin: 15px;
+        border-bottom: 1px solid grey;
+        padding: 2px;
+        &:hover{
+          color: black;
+          background-color: lightgrey;
+          border-radius: 5px;
+        }
+      }
+    }
+    &__content{
+      height: 85%;
+      overflow: auto;
+    }
+    &__input{
+      display: flex;
+      margin: 10px;
+      justify-content: space-between;
+      &-smile{
+        opacity: 0.6;
+        font-size: 20px;
+        &:hover{
+          opacity: 1;
+          cursor: pointer;
+          color: dodgerblue;
+          transition: 0.2s;
+        }
+      }
+      &-action{
+        opacity: 0.6;
+        font-size: 20px;
+        &:hover{
+          opacity: 1;
+          cursor: pointer;
+
+          transition: 0.2s;
+        }
+      }
+      &-item{
+        width: 90%;
+      }
+    }
+  }
+}
+
+#chat__dialogs__search{
+  text-align: center;
+  padding: 5px 0px;
+  margin-bottom: 5px;
+  height: 5%;
+}
+
+.menu__item{
+  margin: 15px;
+  border-bottom: 1px solid grey;
+  padding: 2px;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  &-icon{
+    margin-right: 10px;
+  }
+  &-name{
+    text-decoration: none;
+    color: black;
+  }
+  &:hover{
+    background-color: lightgrey;
+    border-radius: 5px;
+  }
+}
+
+

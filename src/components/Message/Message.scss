@@ -1,0 +1,37 @@
+
+.message{
+  $self:&;
+  display: flex;
+  &__avatar{
+    img{
+      border-radius: 50px;
+    }
+  }
+  &__box{
+    background-color: green;
+    border-radius: 0px 5px 5px 5px;
+    align-items: center;
+    max-width: 30vw;
+  }
+  &__text{
+    color: white;
+    padding: 12px 10px;
+    line-height: 20px;
+  }
+  &__date{
+    color: darkgray;
+    font-size: 10px;
+  }
+  &__itsMe{
+    display: flex;
+    flex-direction: row-reverse;
+    #{$self}__box{
+      background-color: white;
+      border: darkgrey solid 1px;
+      border-radius: 5px 0px 5px 5px;
+    }
+    #{$self}__text{
+      color: black;
+    }
+  }
+}

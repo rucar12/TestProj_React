@@ -1,0 +1,27 @@
+.reg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &__top {
+    text-align: center;
+    padding-bottom:15px ;
+    h2 {
+      font-size: 28px;
+    }
+    p{
+      color: grey;
+      font-size: 15px;
+    }
+  }
+
+  &__content{
+    width: 37%;
+  }
+}
+
+.button{
+  text-transform: uppercase;
+  width: 100%;
+}
